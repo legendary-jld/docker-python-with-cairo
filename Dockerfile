@@ -5,8 +5,8 @@ RUN apk add --update python py-pip
 RUN apk add --update cairo
 
 # Install app dependencies
-# RUN pip install -r requirements.txt
-RUN pip install Flask
+RUN pip install -r requirements.txt
+# RUN pip install Flask
 
 # Bundle app source
 COPY simpleapp.py /src/simpleapp.py
