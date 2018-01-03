@@ -43,7 +43,7 @@ RUN yum install -y centos-release-scl-rh && \
 COPY ./s2i/bin/ $STI_SCRIPTS_PATH
 
 # Copy extra files to the image.
-COPY ./root/ /
+# COPY ./root/ /
 
 # - Create a Python virtual environment for use by any application to avoid
 #   potential conflicts with Python packages preinstalled in the main Python
